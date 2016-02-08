@@ -3,7 +3,8 @@
 
 % Author: A.V. Lebedev (Aging Research Center)
 % Date: 2016-02-08
-%
+% Environment: MATLAB R2012b
+
 % FunImg    - PCB1
 % S3_FunImg - PCB2
 % S3_FunImg - PCB3

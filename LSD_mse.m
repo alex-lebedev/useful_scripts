@@ -16,9 +16,9 @@ mdir = '/MY-PATH/LSD_spm12/';
 mask_file = '/MY-PATH/LSD_spm12/Masks/AllResampled_BrainMask_05_91x109x91.nii';
 subID = cellstr(['S01'; 'S02'; 'S03'; 'S04'; 'S05'; 'S06'; 'S07'; 'S09'; 'S10'; 'S11'; 'S12'; 'S13'; 'S14'; 'S15' ; 'S16'; 'S17'; 'S18'; 'S19'; 'S20']);
 
-r = [0.3];
-m = 2;
-aval = [1 2 3 4 5];
+r = [0.3]; % specify tolerance criterion (r)
+m = 2; % specify embedding dimension (m)
+aval = [1 2 3 4 5]; % specify scales
 
 state = cellstr(['PCB1'; 'PCB2'; 'PCB3';'LSD1'; 'LSD2'; 'LSD3']);
 

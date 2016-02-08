@@ -6,6 +6,6 @@ _Calculates Multiscale Entropy (MSE) for preprocessed images. Uses  LOFT's [`com
 
 
 **extractGraph.m** <br />
-_ (1) Constructs adjacency matrices from the fMRI ROI time-series (extracted using [`DPARSFA`](http://rfmri.org/DPARSF/) toolbox)
+_Constructs adjacency matrices from the fMRI ROI time-series (extracted using [`DPARSFA`](http://rfmri.org/DPARSF/) toolbox)
 and_ <br />
-_ (2) runs calculations of graph theoretical measures: nodal strength and modularity (using [`Brain Connectivity Toolbox`](https://sites.google.com/site/bctnet/))_
+_runs calculations of graph theoretical measures: nodal strength and modularity (using [`Brain Connectivity Toolbox`](https://sites.google.com/site/bctnet/))_

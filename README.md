@@ -1,4 +1,4 @@
-### <span style="color: green"> Miscellaneous scripts for data analysis </span>
+<span style="color: green"> ### Miscellaneous scripts for data analysis </span>
 
 ###### MSE_LSD.m
 Calculates Multiscale Entropy (MSE) for preprocessed images. <br />

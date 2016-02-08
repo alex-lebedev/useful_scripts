@@ -7,7 +7,7 @@
 % <<< EXECUTE STEP-BY-STEP >>>
 %
 % Author: Alexander V. Lebedev
-% Date: 06.08.2014
+% Date: 2014-08-06
 
 
 % 1. Generate *mat- files (adjacency matrices)

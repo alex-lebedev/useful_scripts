@@ -13,4 +13,4 @@ _Calculates Multiscale Entropy (MSE) for preprocessed images. Uses  LOFT's [`com
 
 **PJ - Project-specific scripts:**
 <br />
-PJ_rebootI_freesurferBL.tcsh - _REBOOT-I: Cross-sectional preprocessing of the baseline structural scans in Freesurfer_
+PJ_rebootI_freesurferBL.tcsh - _REBOOT-I: Cross-sectional preprocessing of the baseline structural scans in Freesurfer (v5.3.0)_

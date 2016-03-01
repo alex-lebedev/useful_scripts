@@ -396,6 +396,15 @@ for i = 1:size(slist,1)
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.name = 'C>B';
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [0 -1 1];
     matlabbatch{3}.spm.stats.con.consess{3}.tcon.sessrep = 'none';
+    matlabbatch{3}.spm.stats.con.consess{4}.tcon.name = 'A>BL';
+    matlabbatch{3}.spm.stats.con.consess{4}.tcon.weights = [1 0 0 -1];
+    matlabbatch{3}.spm.stats.con.consess{4}.tcon.sessrep = 'none';
+    matlabbatch{3}.spm.stats.con.consess{5}.tcon.name = 'B>BL';
+    matlabbatch{3}.spm.stats.con.consess{5}.tcon.weights = [0 1 0 -1];
+    matlabbatch{3}.spm.stats.con.consess{5}.tcon.sessrep = 'none';
+    matlabbatch{3}.spm.stats.con.consess{6}.tcon.name = 'C>BL';
+    matlabbatch{3}.spm.stats.con.consess{6}.tcon.weights = [0 0 1 -1];
+    matlabbatch{3}.spm.stats.con.consess{6}.tcon.sessrep = 'none';
     matlabbatch{3}.spm.stats.con.delete = 0;
   
     % Running the batch for each subject: 

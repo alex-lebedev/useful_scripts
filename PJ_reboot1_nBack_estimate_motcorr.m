@@ -1,6 +1,6 @@
 % PJ_reboot1_nBack_estimate.m
 % Written by: Alexander Lebedev (Aging Research Center)
-% Date: 2016-03-01
+% Date: 2016-03-09
 
 % The script performs fMRI design/contrast specification and estimation for
 % "REBOOT: N-back" task
@@ -13,14 +13,13 @@ slist = slist(3:numel(slist)) % subject list
 spm('defaults','FMRI')
 
 for i = 1:size(slist,1)
-    
+    % Generate multiple motion regressors (6-DOF + FD-Power):
     mot6dof = textread(strcat('/Volumes/REBOOT-I/REBOOT_BLdpabi/covariates/RealignParameter/',slist(i,1).name,'/rp_anback.txt'));
     motFD = textread(strcat('/Volumes/REBOOT-I/REBOOT_BLdpabi/covariates/RealignParameter/',slist(i,1).name,'/FD_Power_',slist(i,1).name,'.txt'));
     R = [mot6dof motFD(:,1)]
     save(strcat('/Volumes/REBOOT-I/REBOOT_BLdpabi/covariates/RealignParameter/',slist(i,1).name,'/mot_nback.mat'), 'R')
-
-
-
+    
+    % Proceed with model specification:
     matlabbatch{1}.spm.stats.fmri_spec.dir = {strcat('/Volumes/REBOOT-I/REBOOT_BLdpabi/spm/nBack/',slist(i,1).name)};
     matlabbatch{1}.spm.stats.fmri_spec.timing.units = 'scans';
     matlabbatch{1}.spm.stats.fmri_spec.timing.RT = 2;

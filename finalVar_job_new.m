@@ -4,8 +4,7 @@
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
 slist = dir('/home/ALDRECENTRUM/jonna.nilsson/Desktop/rCOGITO/');
-slist = slist(3:numel(slist)-3) % subject list
-
+slist = slist(3:numel(slist)) % subject list
 
 spm('defaults','FMRI')
 
@@ -738,5 +737,11 @@ for i = 1:size(slist,1)
         matlabbatch{1}.spm.stats.fmri_spec.cvi = 'AR(1)';
         % Running the batch for each subject: 
         spm_jobman('run',matlabbatch)
+        matlabbatch{2}.spm.tools.variability.modeltype = 'boxcar';
+        matlabbatch{2}.spm.tools.variability.modelmat(1) = cfg_dep('fMRI model specification: SPM.mat File', substruct('.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','spmmat'));
+        matlabbatch{2}.spm.tools.variability.metric = 'sd';
+        matlabbatch{2}.spm.tools.variability.resultprefix = 'sd';
+        matlabbatch{2}.spm.tools.variability.resultdir = {strcat('/home/ALDRECENTRUM/jonna.nilsson/Desktop/COGITO_firstlevel/',slist(i,1).name)};
+
 end
 

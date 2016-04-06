@@ -18,3 +18,5 @@ PJ_rebootI_freesurferBL.tcsh - _REBOOT-I: Cross-sectional preprocessing of the b
 PJ_reboot1_nBack_estimate.m - _SPM12 Batch for Design/Contrast specification and estimation batch for "N-back" task from REBOOT-I_
 <br />
 PJ_reboot1_reason_estimate.m - _SPM12 Batch for Design/Contrast specification and estimation batch for "Reasoning" task from REBOOT-I_
+<br />
+PJ_reboot1_EuclD.m - _MATLAB script to calculate Euclidean distance between fMRI activation maps estimated with *estimate_motcorr.m scripts_

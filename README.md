@@ -19,4 +19,4 @@ PJ_reboot1_nBack_estimate.m - _SPM12 Batch for Design/Contrast specification and
 <br />
 PJ_reboot1_reason_estimate.m - _SPM12 Batch for Design/Contrast specification and estimation batch for "Reasoning" task from REBOOT-I_
 <br />
-PJ_reboot1_EuclD.m - _MATLAB script to calculate Euclidean distance between fMRI activation maps estimated with *estimate_motcorr.m scripts_
+PJ_reboot1_EuclD.m - _MATLAB script to calculate Euclidean distance between fMRI activation maps estimated with *estimate_motcorr.m_

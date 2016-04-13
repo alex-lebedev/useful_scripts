@@ -1,3 +1,5 @@
+cd /Volumes/REBOOT-I/REBOOT_BLdpabi/spm/secondLvl
+load('GFprop.mat')
 % Generate interaction terms for SPM contrasts:
 task = [repmat(1,1,172) repmat(2,1,172)]; diff = [repmat(1,1,86) repmat(2,1,86) repmat(1,1,86) repmat(2,1,86)];
 

@@ -1,7 +1,11 @@
 # PJ_reboot1_reasonWM.py
 
 # The script extracts a meta-analysis-based z-score  (keywords: "working memory", "wm") for a number of activation maps,
-# which should be resliced in advance
+# which should be resliced in advance.
+# Requires installation of neurosynth (https://github.com/neurosynth/neurosynth):
+# (after unzipping):
+# >>> pip install -r requirements.txt
+# >>> pip install neurosynth
 
 # Author: A.V. Lebedev (Aging Research Center)
 # Date: 2016-05-06
@@ -20,7 +24,7 @@ decoder = decode.Decoder(dataset, features=['working memory', 'wm'])
 result = decoder.decode(['vIns.nii.gz', 'dIns.nii.gz', 'pIns.nii.gz'], save='decoding_results.txt')
 
 result = decoder.decode([
- '/Volumes/REBOOT-I/REBOOT_BLdpabi/reasNeurosynth/1013_20150520/rspmT_0001.nii', 
+    '/Volumes/REBOOT-I/REBOOT_BLdpabi/reasNeurosynth/1013_20150520/rspmT_0001.nii', 
     '/Volumes/REBOOT-I/REBOOT_BLdpabi/reasNeurosynth/1013_20150520/rspmT_0002.nii', 
     '/Volumes/REBOOT-I/REBOOT_BLdpabi/reasNeurosynth/1026_20150521/rspmT_0001.nii', 
     '/Volumes/REBOOT-I/REBOOT_BLdpabi/reasNeurosynth/1026_20150521/rspmT_0002.nii', 

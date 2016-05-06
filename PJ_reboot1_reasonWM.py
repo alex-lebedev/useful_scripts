@@ -1,9 +1,10 @@
 # PJ_reboot1_reasonWM.py
 
-# The script extracts a meta-analysis-based z-score for a number of activation maps,
+# The script extracts a meta-analysis-based z-score  (keywords: "working memory", "wm") for a number of activation maps,
 # which should be resliced in advance
+
 # Author: A.V. Lebedev (Aging Research Center)
-# Date: 2016-02-08
+# Date: 2016-05-06
 # Environment: MATLAB R2012b
 
 from neurosynth.base.dataset import Dataset

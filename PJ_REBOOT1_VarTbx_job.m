@@ -4,7 +4,7 @@
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
 % Author: A.V. Lebedev (Aging Research Center)
-% Date: 2016-02-08
+% Date: 2016-06-13
 % Environment: MATLAB R2012b
 
 slist = dir('/Volumes/REBOOT-I/REBOOT_BLdpabi/spm/reason');

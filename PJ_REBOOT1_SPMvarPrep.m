@@ -3,7 +3,7 @@
 % Environment: MATLAB R2012b
 
 clear all
-slist = dir('/Volumes/REBOOT-I/REBOOT_BLdpabi/spm/reason');
+slist = dir('/Volumes/REBOOT-I/REBOOT_BLdpabi/spm/nBack');
 slist = slist(3:numel(slist)) % subject list
 
 spm('defaults','FMRI')
@@ -422,11 +422,6 @@ slist = slist(3:numel(slist)) % subject list
 
 spm('defaults','FMRI')
 
-
-
-%%%%%%%%%%%%%
-% REASONING %
-%%%%%%%%%%%%%
 for i = 1:size(slist,1)
     % Proceed with model specification:
     matlabbatch{1}.spm.stats.fmri_spec.dir = {strcat('/Volumes/REBOOT-I/REBOOT_BLdpabi/var/reas/',slist(i,1).name)};

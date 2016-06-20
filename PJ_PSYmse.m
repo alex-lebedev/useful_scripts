@@ -1,19 +1,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% CALCULATE MULTISCALE ENTROPY (MSE) FOR PREPROCESSED IMAGES %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Example:
-% Jordi Riba's Ayahuasca dataset with two fMRI scans (pre- and post- AYA session)
-% 16 subjects
 
-%%% The script calculates sample entropy at scales [1:5] and saves each map separately
-%%% Images are expected to be normalized, detrended and filtered at [0.008<Hz<0.1]
-%%% FunImg    - Visit 1
-%%% S2_FunImg - Visit 2
+% EXAMPLE:
+% Jordi Riba's Ayahuasca dataset 
+% with two fMRI scans (pre- and post- AYA session)
+% Sample: 16 subjects
+
+% The script calculates sample entropy at scales [1:5]
+% and saves each map separately
+% Images are normalized, detrended and filtered at [0.008<Hz<0.1]
+% FunImg    - Visit 1
+% S2_FunImg - Visit 2
 
 % Author: A.V. Lebedev (Aging Research Center)
 % Date: 2016-06-20
 % Environment: MATLAB R2012b
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all
 cd /Volumes/REBOOT-I/

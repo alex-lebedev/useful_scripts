@@ -6,7 +6,7 @@ _Constructs adjacency matrices from the fMRI ROI time-series (extracted using [`
 and_ <br />
 _runs calculations of graph theoretical measures: nodal strength and modularity (using [`Brain Connectivity Toolbox`](https://sites.google.com/site/bctnet/))_
 
-**MSE_LSD.m** <br />
+**PSYmse.m** <br />
 _Calculates Multiscale Entropy (MSE) for preprocessed images. Uses  LOFT's [`complexity`](http://loft-lab.org/index-5-2.html) toolbox_ <br />
 
 

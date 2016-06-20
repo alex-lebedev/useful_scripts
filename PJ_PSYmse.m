@@ -25,7 +25,7 @@ subID = cellstr(['V01'; 'V02'; 'V03'; 'V04'; 'V05'; 'V06'; 'V07';'V08'; 'V09'; '
 
 r = [0.3];
 m = 2;
-aval = [3:5];
+aval = [1:5];
 
 state = cellstr(['VIS1'; 'VIS2']);
 

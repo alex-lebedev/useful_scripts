@@ -10,7 +10,6 @@ mdir = '/home/ALDRECENTRUM/alexander.lebedev/Desktop/PSILODEP/';
 mask_file = '/home/ALDRECENTRUM/alexander.lebedev/Desktop/PSILODEP/Masks/AllResampled_BrainMask_05_91x109x91.nii';
 subID = cellstr(['S01'; 'S02'; 'S03'; 'S04'; 'S05'; 'S07'; 'S08'; 'S09'; 'S10'; 'S13'; 'S14'; 'S15'; 'S16'; 'S18'; 'S19'; 'S20']);
 
-
 state = cellstr(['VIS1r' ;'VIS1m';'VIS2r' ;'VIS2m']);
 
 wdirs = cellstr(['S1_FunImg/';'S2_FunImg/'; 'S3_FunImg/'; 'S4_FunImg/']);
@@ -20,9 +19,6 @@ wdirs(1) = cellstr('FunImg/');
 r = [0.3];
 m = 1;
 aval = [1:5];
-
-
-
 
 for aa = 1:length(aval)
     a = aval(aa);

@@ -19,7 +19,7 @@ wdirs(1) = cellstr('FunImg/');
 
 r = [0.3];
 m = 1;
-aval = [4:5];
+aval = [1:5];
 
 
 

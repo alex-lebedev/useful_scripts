@@ -18,7 +18,7 @@ wdirs(1) = cellstr('FunImgARCWDF/');
 
 
 r = [0.3];
-m = 3;
+m = 1;
 aval = [1:5];
 
 

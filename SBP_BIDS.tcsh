@@ -1,3 +1,4 @@
+
 tcsh
 
 set flist = `ls DCM/*/*/*00000001*`
@@ -12,9 +13,9 @@ set subjs = `ls -d DCM/*/*`
 
 
 
-# Start the loop:
 
-foreach i ($subjs)
+
+foreach i($subjs)
 
 	# the two lines below cut the strings read by 'ls' to generate proper subject IDs from them:
 
@@ -22,10 +23,10 @@ foreach i ($subjs)
 	
 	set snA = `echo ls DCM/$snam*/*/co*.nii.gz`
 	set ans = `echo $snA[$#snA] | cut -d'/' -f3`
-	set snF = `echo ls DCM/$snam*/*/*func.nii.gz`
-	set funcs = `echo $snF[$#snF] | cut -d'/' -f3`
-	set snD = `echo ls DCM/$snam*/*/*func.nii.gz`
-	set diffs = `echo $snF[$#snD] | cut -d'/' -f3`
+	#set snF = `echo ls DCM/$snam*/*/*func.nii.gz`
+	#set funcs = `echo $snF[$#snF] | cut -d'/' -f3`
+	set snD = `echo ls DCM/$snam*/*/*bval*`
+	set diffs = `echo $snD[$#snD] | cut -d'/' -f3`
 
   
 
@@ -38,18 +39,22 @@ foreach i ($subjs)
 	
 
 	# T1:
-	mv DCM/$snam*/$snA/co*.nii.gz NIFTI/sub-$snam/anat/sub-$snam\_T1w.nii.gz
+	cp DCM/$snam*/$ans/co*.nii.gz NIFTI/sub-$snam/anat/sub-$snam\_\T1w.nii.gz
 	
 	# REST
-	mv DCM/$snam*/snF/func.nii.gz NIFTI/sub-$snam/func/sub-$snam\_task-rest_bold.nii.gz	
-	mv  DCM/$snam*/snA/func.json NIFTI/sub-$snam/func/sub-$snam\_task-rest_bold.json
+	#cp DCM/$snam*/$funcs/func.nii.gz NIFTI/sub-$snam/func/sub-$snam\_\task-rest_bold.nii.gz	
+	#cp  DCM/$snam*/$funcs/func.json NIFTI/sub-$snam/func/sub-$snam\_\task-rest_bold.json
 	
 	# DTI
-	mv DCM/$snam*/$diffs/*.nii.gz NIFTI/sub-$snam/dwi/sub-$snam\_dwi.nii.gz
-	mv DCM/$snam*/$diffs/*.bvec NIFTI/sub-$snam/dwi/sub-$snam\_dwi.bvec
-	mv DCM/$snam*/$diffs/*.bval NIFTI/sub-$snam/dwi/sub-$snam\_dwi.bval
+	cp DCM/$snam*/$diffs/*.nii.gz NIFTI/sub-$snam/dwi/sub-$snam\_\dwi.nii.gz
+	cp DCM/$snam*/$diffs/*.bvec NIFTI/sub-$snam/dwi/sub-$snam\_\dwi.bvec
+	cp DCM/$snam*/$diffs/*.bval NIFTI/sub-$snam/dwi/sub-$snam\_\dwi.bval
 
 end
+
+
+# ls NIFTI/*/*/*
+# rm DCM/*/*/*nii*
 
 
 # End of the script
